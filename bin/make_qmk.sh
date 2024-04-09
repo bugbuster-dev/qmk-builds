@@ -1,4 +1,5 @@
-source ~/bin/git_helpers.func
+script_path=$(cd "$(dirname "${BASH_SOURCE[0]}")"; pwd -P)/$(basename "${BASH_SOURCE[0]}")
+source $script_path/git_helpers.func
 
 vendor="$VENDOR"
 model="$MODEL"
