@@ -1,0 +1,6 @@
+
+# Returns "*" if the current git branch is dirty.
+function git_repo_dirty {
+  [[ $(git diff --shortstat 2> /dev/null | tail -n1) != "" ]] && echo "*"
+}
+
